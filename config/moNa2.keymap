@@ -48,10 +48,10 @@
 
         default_layer {
             bindings = <
-&mt LCTRL Q     &kp W         &kp E      &kp R      &kp T                                        &kp Y            &kp U  &kp I      &kp O    &kp P
-&mt LEFT_ALT E  &kp S         &kp D      &kp F      &kp G                            &kp ESCAPE  &kp H            &kp J  &kp K      &kp L    &lt 1 SEMICOLON
-&mt TAB Z       &kp X         &kp C      &kp V      &kp B          &kp MINUS         &kp EQUAL   &kp N            &kp M  &kp COMMA  &kp DOT  &lt 2 QUESTION
-&kp LWIN        &kp LEFT_ALT  &kp LCTRL  &kp LANG5  &kp BACKSPACE  &kp LEFT_SHIFT    &kp SPACE   &mt LANG4 ENTER                             &kp ESC
+&mt LCTRL Q              &kp W         &kp E      &kp R      &kp T                                    &kp Y            &kp U  &kp I      &kp O    &kp P
+&mt LEFT_ALT E           &kp S         &kp D      &kp F      &kp G                        &kp ESCAPE  &kp H            &kp J  &kp K      &kp L    &lt 1 SEMICOLON
+&mt TAB Z                &kp X         &kp C      &kp V      &kp B          &kp MINUS     &kp EQUAL   &kp N            &kp M  &kp COMMA  &kp DOT  &lt 2 QUESTION
+&mt LEFT_SHIFT LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LANG5  &kp BACKSPACE  &kp DELETE    &kp SPACE   &mt LANG4 ENTER                             &kp ESC
             >;
 
             sensor-bindings =
@@ -72,10 +72,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
+&trans  &trans  &trans  &trans     &trans                       &trans  &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans               &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans    &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
