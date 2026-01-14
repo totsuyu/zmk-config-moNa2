@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
- 
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 5^#define SCROLL 6
 #define JP_DQUOTE       AT                // "
@@ -27,7 +27,6 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-
 
 &mt {
     flavor = "balanced";
@@ -80,13 +79,13 @@
                 <&scroll_up_down>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
- 
+
         layer_2 {
             bindings = <
-&kp JP_HANZEN   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp N5                                   &kp PLUS        &kp JP_PIPE     &kp LPAREN  &kp RPAREN  &kp JP_EQUAL
-&kp SEMICOLON  &kp JP_COLON  &kp JP_QUOTE  &kp JP_DQUOTE      &kp JP_BACKQUOTE              &kp JP_ASTERISK  &kp MINUS       &kp SLASH    &kp LBRACE        &kp JP_RBRACE        &trans
-&kp NUMBER_6   &kp N7        &kp N8        &kp N9             &kp JP_TILDE     &kp MINUS    &kp SLASH  &kp JP_UNDERSCORE  &kp JP_AT  &kp JP_LBRACKET       &kp JP_RBRACKET      &trans
-&trans         &trans        &trans        &trans             &trans           &trans       &trans     &trans                                                                    &trans
+&kp LANGUAGE_5  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp N5                             &kp PLUS        &kp PIPE     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&kp SEMICOLON   &kp COLON     &kp SQT       &kp DOUBLE_QUOTES  &kp GRAVE               &kp ASTRK  &kp MINUS       &kp SLASH    &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&kp NUMBER_6    &kp N7        &kp N8        &kp N9             &kp TILDE  &kp MINUS    &kp SLASH  &kp UNDERSCORE  &kp AT_SIGN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans          &trans        &trans        &trans             &trans     &trans       &trans     &trans                                                                    &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -94,10 +93,10 @@
 
         layer_1 {
             bindings = <
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15                          &kp JP_PLUS   &kp N7        &kp N8        &kp N9        &kp JP_EQUAL
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10            &kp JP_ASTERISK  &kp MINUS  &kp N4        &kp N5        &kp NUMBER_6  &kp N0
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans    &kp SLASH     &kp JP_UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans   &trans   &trans   &trans   &trans   &trans    &trans        &trans                                               &trans
+&kp F11  &kp F12  &kp F13  &kp F14  &kp F15                             &kp JP_PLUS        &kp N7        &kp N8        &kp N9        &kp JP_EQUAL
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10            &kp JP_ASTERISK  &kp MINUS          &kp N4        &kp N5        &kp NUMBER_6  &kp N0
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans    &kp SLASH        &kp JP_UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans   &trans   &trans   &trans   &trans   &trans    &trans           &trans                                                       &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
