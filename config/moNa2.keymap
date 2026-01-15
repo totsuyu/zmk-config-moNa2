@@ -3,7 +3,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
-#define MOUSE 5^#define SCROLL 6
+#define MOUSE 5
+#define SCROLL 6
 
 &mt {
     flavor = "balanced";
@@ -40,8 +41,6 @@
             tap-ms = <20>;
         };
     };
-
-    　
 
     keymap {
         compatible = "zmk,keymap";
