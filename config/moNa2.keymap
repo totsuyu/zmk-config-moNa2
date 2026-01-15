@@ -3,7 +3,8 @@
 #include <dt-bindings/zmk/pointing.h>
   
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
-#define MOUSE 5^#define SCROLL 6
+#define MOUSE 5
+#define SCROLL 6
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -125,7 +126,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        MOUSE {
+        layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans    &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans    &trans              &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
@@ -136,7 +137,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        SCROLL {
+        layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
