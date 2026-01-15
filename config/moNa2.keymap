@@ -3,7 +3,8 @@
 #include <dt-bindings/zmk/pointing.h>
   
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
-#define MOUSE 5^#define SCROLL 6
+#define MOUSE 5
+#define SCROLL 6
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
